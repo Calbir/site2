@@ -5,9 +5,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Aplicatico II</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <link href="img/pedra.png" rel="icon">
     </head>
     <body>
         <a href="index.html"> voltar</a>
-        <h1>Hello World!</h1>
+        <h1>DESENVOLVIMENTO DE APLICATIVOS II</h1>
     </body>
 </html>

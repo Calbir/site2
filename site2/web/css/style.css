@@ -1,10 +1,10 @@
 html {
     text-align: center;
     font-family: Ink Free;
-    background-color: #cccccc;
     color: red;
 }
 
 a {
-    color: red;
+    color: black;
+    background-color: red;
 }

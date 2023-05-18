@@ -8,7 +8,7 @@
         <link href="img/rubi3.png" rel="icon">
     </head>
     <body  style="background-image: url(img/fundo2.jpg); background-size: 10%;">
-        <a href="index.html"> voltar</a>
+        <a href="telaPrincipal.jsp"> voltar</a>
         <h1>DESENVOLVIMENTO DE SISTEMAS WEB III</h1>
     </body>
 </html>

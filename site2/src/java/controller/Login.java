@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.User;
 
-@WebServlet(name = "Login", urlPatterns = {"/Login"})
+@WebServlet(name = "Login", urlPatterns = {"/login_controller"})
 public class Login extends HttpServlet {
     
     private String name;
@@ -28,7 +28,7 @@ public class Login extends HttpServlet {
         if(name3.isLogged()){
         HttpSession session = request.getSession();
         session.setAttribute("userSession", name3);
-        request.setAttribute("userLogged", name3);
+        //request.setAttribute("userLogged", name3);
         request.getRequestDispatcher("telaPrincipal.jsp").forward(request, response);
         } else {
         
@@ -37,12 +37,12 @@ public class Login extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Login</title>");            
+            out.println("<title>QIso</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<script>");
             out.println("alert('Você errou')");
-            out.println("window.locationreplace('index.jsp')");
+            out.println("window.location.replace('index.jsp')");
             out.println("</script>");
             out.println("</body>");
             out.println("</html>");

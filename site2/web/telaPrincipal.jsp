@@ -1,4 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="model.User" %>
+<%@include file="session/verify.jsp" %>
+
 <html>
     <head>
         <title>QIso</title>

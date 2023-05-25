@@ -1,5 +1,13 @@
 <%@page import="model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    User userSession = (User)session.getAttribute("userSession");
+    //out.print(userSession)
+    if(userSession != null){
+        response.sendRedirect("telaPrincipal.jsp");
+    }
+%>
+
 <html>
     <head>
         <title>QIso</title>
@@ -13,7 +21,7 @@
         
         <form action="login_controller" method="post">
             
-            <input style="color: red; background-color: #660000;" type="text" name="user" id="user" class="fields" placeholder="Digite seu nome" required>
+            <input style="color: red; background-color: #660000;" type="text" name="name" id="user" class="fields" placeholder="Digite seu nome" required>
             <br><br>
             <input style="color: red; background-color: #660000;" type="number" name="pass" id="pass" class="fields" placeholder="Coloque sua senha" required>
             <br><br>

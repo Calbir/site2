@@ -13,11 +13,11 @@
         <img src="img/logo2.png" width="200" alt="QIso"/>
         
         
-        <form action="login_controller" method="post">
+        <form action="Registro" method="post">
             
-            <input style="color: red; background-color: #660000;" type="text" name="user" id="user" class="fields" placeholder="Digite seu nome" required>
+            <input style="color: red; background-color: #660000;" type="text" name="name" id="user" class="fields" placeholder="Digite seu nome" required>
             <br><br>
-            <input style="color: red; background-color: #660000;" type="email" name="user" id="user" class="fields" placeholder="Digite seu email" required>
+            <input style="color: red; background-color: #660000;" type="email" name="email" id="email" class="fields" placeholder="Digite seu email" required>
             <br><br>
             <input style="color: red; background-color: #660000;" type="number" name="pass" id="pass" class="fields" placeholder="Coloque sua senha" required>
             <br><br>

@@ -27,5 +27,20 @@ public class UserDAO {
         }
         return user;
     }
+
+ public void insertUser(User user) throws SQLException{
+    String sql = "INSERT INTO usuarios(nome, senha, email)" 
+                 + "VALUES (?, ?, ?)";
+    
+    PreparedStatement prep = conn.prepareStatement(sql);
+    
+    prep.setString(1, user.getUserName());
+    prep.setString(2, user.getUserPass());
+    prep.setString(3, user.getUserEmail());
+    
+    prep.execute(); 
+    prep.close();
+    
+    }
     
 }
